@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delicious Bites Restaurant</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="js.js" defer></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">🍽 Delicious Bites</div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#booking">Book Table</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Delicious Bites</h1>
+        <p>Experience Fine Dining Like Never Before</p>
+        <a href="#booking" class="btn">Book a Table</a>
+    </div>
+</section>
+
+<!-- Menu Section -->
+<section id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="">
+            <h3>Caesar Salad</h3>
+            <p>Fresh vegetables and dressing.</p>
+            <span>₹249</span>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="">
+            <h3>Pizza</h3>
+            <p>Cheesy delight with toppings.</p>
+            <span>₹499</span>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb" alt="">
+            <h3>Chocolate Cake</h3>
+            <p>Rich and creamy dessert.</p>
+            <span>₹199</span>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e" alt="">
+            <h3>Fresh Juice</h3>
+            <p>Natural fruit beverages.</p>
+            <span>₹149</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- Booking Section -->
+<section id="booking" class="booking-section">
+    <h2>Reserve Your Table</h2>
+
+    <form id="bookingForm">
+
+        <input type="text" id="name" placeholder="Full Name" required>
+
+        <input type="email" id="email" placeholder="Email Address" required>
+
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+
+        <input type="date" id="date" required>
+
+        <input type="time" id="time" required>
+
+        <select id="table" required>
+            <option value="">Select Table Number</option>
+            <option>Table 1</option>
+            <option>Table 2</option>
+            <option>Table 3</option>
+            <option>Table 4</option>
+            <option>Table 5</option>
+        </select>
+
+        <select id="persons" required>
+            <option value="">Number of Persons</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+        </select>
+
+        <textarea id="request" placeholder="Special Request (Optional)"></textarea>
+
+        <button type="submit" class="btn">Book Table</button>
+
+    </form>
+</section>
+
+<!-- Success Modal -->
+<div id="successModal" class="modal">
+    <div class="modal-content">
+        <h2>✅ Booking Successful!</h2>
+        <p id="bookingDetails"></p>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="contact">
+    <h3>Delicious Bites Restaurant</h3>
+    <p>Email: info@deliciousbites.com</p>
+    <p>Phone: +91 9876543210</p>
+
+    <div class="social-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+    </div>
+</footer>
+</body>
+</html>
